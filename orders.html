@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="style.css"></head><body><h2>Order History</h2><div id="o"></div><script>let orders=JSON.parse(localStorage.getItem("orders")||"[]");document.getElementById("o").innerHTML=orders.length?orders.map(x=>"<p>"+x.date+" - "+x.items.length+" item(s)</p>").join(""):"No orders yet";</script></body></html>
